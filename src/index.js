@@ -70,4 +70,7 @@ function renderCountries(countryName) {
       .join('');
     refs.countryListEl.innerHTML = markup;
   }
+  if (countryName.length === 1) {
+    refs.countryListEl.innerHTML = '';
+  }
 }
